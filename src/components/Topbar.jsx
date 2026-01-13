@@ -7,7 +7,7 @@ const Topbar = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-teal-800 shadow-sm">
-      <div className="max-w-7xl mx-auto md:p-3 flex items-center space-x-5 justify-between">
+      <div className="max-w-7xl mx-auto p-3 flex items-center space-x-5 justify-between">
         
         {/* Logo */}
         <svg width="600" height="180%" viewBox="0 0 1200 180" xmlns="http://www.w3.org/2000/svg">
