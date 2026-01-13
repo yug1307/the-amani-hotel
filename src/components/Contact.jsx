@@ -14,7 +14,7 @@ const Contact = () => {
     <>
     <Topbar/>
     <section className="bg-gray-200 grid grid-cols-1 md:grid-cols-2">
-      <img src="/src/assets/contact-01.png" alt="" className="h-full w-[auto]"/>
+      <img src="/images/contact-01.png" alt="" className="h-full w-[auto]"/>
 
       <div className="flex flex-col justify-center space-y-6 py-10 px-5">
         <h2 className="text-3xl font-bold text-center">Contact Us</h2>
@@ -68,7 +68,7 @@ const Contact = () => {
         </div>
       </div>
         
-      <img src="/src/assets/contact-02.png" alt="" className="h-full w-[auto]"/>
+      <img src="/images/contact-02.png" alt="" className="h-full w-[auto]"/>
     </section>
     <FooterOne/>
     </>

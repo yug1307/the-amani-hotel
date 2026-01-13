@@ -3,16 +3,16 @@ import Topbar from './Topbar'
 import FooterOne from './FooterOne'
 
 const imgGallery = [ 
-  { imgSrc: "/src/assets/gallery-01.png", alt: "Amani Hotel Gallery Image 1" },
-  { imgSrc: "/src/assets/gallery-02.png", alt: "Amani Hotel Gallery Image 2" },
-  { imgSrc: "/src/assets/gallery-03.png", alt: "Amani Hotel Gallery Image 3" },
-  { imgSrc: "/src/assets/gallery-04.png", alt: "Amani Hotel Gallery Image 4" },
-  { imgSrc: "/src/assets/gallery-05.png", alt: "Amani Hotel Gallery Image 5" },
-  { imgSrc: "/src/assets/gallery-06.png", alt: "Amani Hotel Gallery Image 6" },
-  { imgSrc: "/src/assets/gallery-07.png", alt: "Amani Hotel Gallery Image 7" },
-  { imgSrc: "/src/assets/gallery-08.png", alt: "Amani Hotel Gallery Image 8" },
-  { imgSrc: "/src/assets/gallery-09.png", alt: "Amani Hotel Gallery Image 9" },
-  { imgSrc: "/src/assets/gallery-10.png", alt: "Amani Hotel Gallery Image 10" }
+  { imgSrc: "/images/gallery-01.png", alt: "Amani Hotel Gallery Image 1" },
+  { imgSrc: "/images/gallery-02.png", alt: "Amani Hotel Gallery Image 2" },
+  { imgSrc: "/images/gallery-03.png", alt: "Amani Hotel Gallery Image 3" },
+  { imgSrc: "/images/gallery-04.png", alt: "Amani Hotel Gallery Image 4" },
+  { imgSrc: "/images/gallery-05.png", alt: "Amani Hotel Gallery Image 5" },
+  { imgSrc: "/images/gallery-06.png", alt: "Amani Hotel Gallery Image 6" },
+  { imgSrc: "/images/gallery-07.png", alt: "Amani Hotel Gallery Image 7" },
+  { imgSrc: "/images/gallery-08.png", alt: "Amani Hotel Gallery Image 8" },
+  { imgSrc: "/images/gallery-09.png", alt: "Amani Hotel Gallery Image 9" },
+  { imgSrc: "/images/gallery-10.png", alt: "Amani Hotel Gallery Image 10" }
 ]
 
 const Gallery = () => {

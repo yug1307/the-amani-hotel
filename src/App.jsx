@@ -12,18 +12,18 @@ import {
 
 
 const Rooms = [
-  { imgSrc: "/src/assets/deluxeroom.png", title: "Deluxe Room", desc: "Perfect for solo travelers or couples, featuring modern décor and essential comforts" },
-  { imgSrc: "/src/assets/executiveroom.png", title: "Executive Room", desc: "Spacious rooms ideal for business travelers, offering a work-friendly environment with premium amenities" },
-  { imgSrc: "/src/assets/luxurysuite.png", title: "Luxury Suite", desc: "Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors" }
+  { imgSrc: "/images/deluxeroom.png", title: "Deluxe Room", desc: "Perfect for solo travelers or couples, featuring modern décor and essential comforts" },
+  { imgSrc: "/images/executiveroom.png", title: "Executive Room", desc: "Spacious rooms ideal for business travelers, offering a work-friendly environment with premium amenities" },
+  { imgSrc: "/images/luxurysuite.png", title: "Luxury Suite", desc: "Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors" }
 ]
 
 const Amenities = [
-  { imgSrc: "/src/assets/amenity-01.png", title: "Plush bedding & premium linens" },
-  { imgSrc: "/src/assets/amenity-02.png", title: "Air-Conditioning" },
-  { imgSrc: "/src/assets/amenity-03.png", title: "High-speed Wi-Fi" },
-  { imgSrc: "/src/assets/amenity-04.png", title: "Smart TV" },
-  { imgSrc: "/src/assets/amenity-05.png", title: "Tea & coffee setup" },
-  { imgSrc: "/src/assets/amenity-06.png", title: "Modern bathroom with luxury toiletries" }
+  { imgSrc: "/images/amenity-01.png", title: "Plush bedding & premium linens" },
+  { imgSrc: "/images/amenity-02.png", title: "Air-Conditioning" },
+  { imgSrc: "/images/amenity-03.png", title: "High-speed Wi-Fi" },
+  { imgSrc: "/images/amenity-04.png", title: "Smart TV" },
+  { imgSrc: "/images/amenity-05.png", title: "Tea & coffee setup" },
+  { imgSrc: "/images/amenity-06.png", title: "Modern bathroom with luxury toiletries" }
 ]
 
 const whyChooseUs = [
@@ -40,7 +40,7 @@ function App() {
   return (
     <> 
     <Topbar/>
-    <img src="/src/assets/home-01.png" alt="home" className="h-full w-[auto]"/>
+    <img src="/images/home-01.png" alt="home" className="h-full w-[auto]"/>
     <section className="bg-lime-200 py-10 px-5 space-y-6">
       <h2 className="text-3xl text-center font-bold">Welcome to The Amani Hotel</h2>
 
@@ -86,7 +86,7 @@ function App() {
         </div>
       </div>
 
-      <img src="/src/assets/contact-01.png" alt="contact" className="h-full w-[auto]"/>
+      <img src="/images/contact-01.png" alt="contact" className="h-full w-[auto]"/>
     </section>
 
     {/* Our Rooms & Suites */}
