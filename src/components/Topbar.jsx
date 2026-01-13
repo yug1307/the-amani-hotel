@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,9 +19,9 @@ const Topbar = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-6 text-white text-xl font-medium">
-          <a href="/" className="hover:text-[#C9A24D]">Home</a>
-          <a href="/gallery" className="hover:text-[#C9A24D]">Gallery</a>
-          <a href="/contact" className="hover:text-[#C9A24D]">Contact</a>
+          <Link to="/" className="hover:text-[#C9A24D]">Home</Link>
+          <Link to="/gallery" className="hover:text-[#C9A24D]">Gallery</Link>
+          <Link to="/contact" className="hover:text-[#C9A24D]">Contact</Link>
         </nav>
 
         {/* Book Now Button (Desktop) */}
@@ -42,9 +43,9 @@ const Topbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-teal-800 border-t">
           <nav className="flex flex-col items-center space-y-4 px-6 py-6 text-white font-medium">
-            <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
-            <a href="/gallery" onClick={() => setMenuOpen(false)}>Gallery</a>
-            <a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a>
+            <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+            <Link to="/gallery" onClick={() => setMenuOpen(false)}>Gallery</Link>
+            <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
 
             <a
               href="/contact"
