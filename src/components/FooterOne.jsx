@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 const contact = [
   { icon: <MapPin/>, address: "Kanhartoli, Gondia - 441 614" },
-  { icon: <Phone/>, phone: 7888020432, phone2: 7974472452, phone3: 9322276364 },
+  { icon: <Phone/>, phone: 8446603142 },
   { icon: <Mail/>, email: "amaniserenityindia@gmail.com" }
 ]
 
@@ -36,9 +36,9 @@ const FooterOne = () =>{
 
               {details.phone && (
                 <p>
-                  <a href={`tel:+91 ${details.phone}`}>{details.phone}, </a>
-                  <a href={`tel:+91 ${details.phone2}`}>{details.phone2}, </a>
-                  <a href={`tel:+91 ${details.phone3}`}>{details.phone3}</a>
+                  <a href={`tel:+91 ${details.phone}`}>{details.phone}</a>
+                  {/*<a href={`tel:+91 ${details.phone2}`}>{details.phone2}, </a>
+                  <a href={`tel:+91 ${details.phone3}`}>{details.phone3}</a>*/}
                 </p>
               )} 
               
