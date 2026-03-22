@@ -1,29 +1,24 @@
-import React from "react"
+import { Suspense } from "react"
 import Topbar from "./components/Topbar"
 import FooterOne from "./components/FooterOne"
-import {
-  FaHotel,
-  FaLeaf,
-  FaConciergeBell,
-  FaMapMarkedAlt,
-  FaStar,
-  FaMoneyBillWave
-} from "react-icons/fa";
-
+import { FaHotel, FaLeaf, FaConciergeBell, FaMapMarkedAlt, FaStar, FaMoneyBillWave } from "react-icons/fa";
+import { Bed, Wifi, Coffee, Tv, Bath, Wind } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const Rooms = [
-  { imgSrc: "/images/deluxeroom.png", title: "Deluxe Room", desc: "Perfect for solo travelers or couples, featuring modern décor and essential comforts" },
-  { imgSrc: "/images/executiveroom.png", title: "Executive Room", desc: "Spacious rooms ideal for business travelers, offering a work-friendly environment with premium amenities" },
-  { imgSrc: "/images/luxurysuite.png", title: "Luxury Suite", desc: "Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors" }
-]
-
-const Amenities = [
-  { imgSrc: "/images/amenity-01.png", title: "Plush bedding & premium linens" },
-  { imgSrc: "/images/amenity-02.png", title: "Air-Conditioning" },
-  { imgSrc: "/images/amenity-03.png", title: "High-speed Wi-Fi" },
-  { imgSrc: "/images/amenity-04.png", title: "Smart TV" },
-  { imgSrc: "/images/amenity-05.png", title: "Tea & coffee setup" },
-  { imgSrc: "/images/amenity-06.png", title: "Modern bathroom with luxury toiletries" }
+  { 
+    imgSrc: "/images/deluxeroom.png", title: "Deluxe Room", link: "/contact", price: "₹1000",
+    desc: [`Perfect for solo travelers or couples, featuring modern décor and essential comforts`], 
+    amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
+  },
+  { imgSrc: "/images/executiveroom.png", title: "Executive Room", link: "/contact", price: "₹1200",
+    desc: [`Spacious rooms ideal for business travelers, offering a work-friendly environment with premium amenities`],
+    amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
+  },
+  { imgSrc: "/images/luxurysuite.png", title: "Luxury Suite", link: "/contact", price: "₹1500",
+    desc: [`Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors`],
+    amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
+  }
 ]
 
 const whyChooseUs = [
@@ -40,8 +35,7 @@ function App() {
   return (
     <> 
     <Topbar/>
-    <img src="/images/home-01.png" alt="home" className="h-full w-[auto]"/>
-    <section className="bg-lime-200 py-10 px-5 space-y-6">
+    <section className="bg-gradient-to-br from-green-100 to-yellow-100 py-10 px-5 space-y-6">
       <h2 className="text-3xl text-center font-bold">Welcome to The Amani Hotel</h2>
 
       <p className="max-w-3xl mx-auto text-center text-lg">
@@ -63,8 +57,10 @@ function App() {
     </section>
 
     {/* About US */}
-    <section className="grid grid-cols-1 md:grid-cols-2 bg-violet-200 my-12">
-      <div className="py-10 px-4 flex flex-col justify-center space-y-4">
+    <section className="px-12 py-24 grid grid-cols-1 md:grid-cols-2 gap-5 bg-gradient-to-br from-green-100 to-yellow-100">
+      <img src="/images/contact-01.png" alt="contact" className="h-full w-[auto] rounded-xl"/>
+
+      <div className="bg-white py-10 px-4 rounded-xl flex flex-col justify-center space-y-4">
 
         <h2 className="text-3xl text-center font-semibold">About The Amani Hotel</h2>
 
@@ -85,12 +81,10 @@ function App() {
           The Amani Hotel is your home away from home.
         </div>
       </div>
-
-      <img src="/images/contact-01.png" alt="contact" className="h-full w-[auto]"/>
     </section>
 
     {/* Our Rooms & Suites */}
-    <section className="bg-pink-200 py-10 px-5 space-y-6">
+    <section className="bg-gradient-to-br from-green-100 to-yellow-100 py-10 px-5 space-y-6">
       <div className="space-y-2">
         <h2 className="text-3xl font-semibold text-center">🛏️ Our Rooms & Suites</h2>
 
@@ -101,52 +95,45 @@ function App() {
       </div>
 
       {/* Room */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 max-w-6xl mx-auto">
         {Rooms.map((room, index) => (
 
           <div 
             key={index} 
-            className="bg-white rounded-lg shadow-md overflow-hidden">
+            className="flex bg-white rounded-lg shadow-md overflow-hidden">
 
-            <img src={room.imgSrc} alt={room.title} className="w-full h-64 object-cover"/>
+            <img src={room.imgSrc} alt={room.title} className="w-1/2 h-[50vh] object-cover"/>
             <div className="p-4 space-y-2">
-              <h3 className="text-xl font-semibold">{room.title}</h3>
+              <h3 className="text-2xl font-semibold text-orange-500">{room.title}</h3>
               <p className="text-gray-700">{room.desc}</p>
+
+              <ul className="flex gap-2">
+                {room.amenities.map((amenity, index) => (
+                  <li key={index} className="text-orange-500">{amenity.icon}</li>
+                ))}
+              </ul>
+
+              <div className="text-xl text-red-500 font-bold">{room.price}/per night</div>
+
+              <Link to={room.link} className="">
+                <div className="bg-zinc-700 w-1/4 text-white text-center rounded-md p-2 my-4 font-semibold">Book Now</div>
+              </Link>
             </div>
           </div>
         ))}
       </div>
-      
-      {/* Amenities */}
-      <div className="py-6 space-y-5">
-        <h2 className="text-2xl text-center font-semibold">Room Amenities</h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-
-          {Amenities.map((amenity, index) => (
-          
-            <div 
-              key={index} 
-              className="bg-white rounded-lg shadow-md overflow-hidden">
-            
-              <img src={amenity.imgSrc} alt={amenity.title} className="w-full lg:h-72 md:h-64 object-cover"/>
-              <div className="text-center text-lg my-4">{amenity.title}</div>
-            </div>
-          ))}
-        </div>
-      </div>
     </section>
 
     {/* Why Choose US */}
-    <section className="bg-orange-500 py-10 px-5 space-y-6">
+    <section className="bg-gradient-to-br from-green-100 to-yellow-100 py-10 px-5 space-y-6">
       <h2 className="text-3xl text-center font-bold">🌟 What Makes Us Different??</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 max-w-7xl mx-auto">
         {whyChooseUs.map((item, index) => (
 
           <div 
             key={index} 
-            className="bg-white py-4 rounded-xl shadow-md space-y-2">
+            className="py-4 px-2 rounded-xl shadow-md border border-green-500 space-y-2">
 
             <div className="text-3xl flex justify-center">{item.icon}</div>
             <div className="text-lg text-center font-medium">{item.title}</div>
