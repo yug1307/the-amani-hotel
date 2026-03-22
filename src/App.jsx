@@ -116,7 +116,7 @@ function App() {
               <div className="text-xl text-red-500 font-bold">{room.price}/per night</div>
 
               <Link to={room.link} className="">
-                <div className="bg-zinc-700 w-1/4 text-white text-center rounded-md p-2 my-4 font-semibold">Book Now</div>
+                <div className="bg-zinc-700 lg:w-1/4 w-1/2 text-white text-center rounded-md p-2 my-4 font-semibold">Book Now</div>
               </Link>
             </div>
           </div>
