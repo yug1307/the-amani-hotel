@@ -95,14 +95,14 @@ function App() {
       </div>
 
       {/* Room */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-1 gap-4 max-w-6xl mx-auto">
         {Rooms.map((room, index) => (
 
           <div 
             key={index} 
-            className="flex bg-white rounded-lg shadow-md overflow-hidden">
+            className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 flex bg-white rounded-lg shadow-md overflow-hidden">
 
-            <img src={room.imgSrc} alt={room.title} className="w-1/2 h-[50vh] object-cover"/>
+            <img src={room.imgSrc} alt={room.title} className="w-full h-[50vh] object-cover"/>
             <div className="p-4 space-y-2">
               <h3 className="text-2xl font-semibold text-orange-500">{room.title}</h3>
               <p className="text-gray-700">{room.desc}</p>
