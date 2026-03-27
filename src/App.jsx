@@ -133,7 +133,7 @@ function App() {
 
           <div 
             key={index} 
-            className="py-4 px-2 rounded-xl shadow-md border border-green-500 space-y-2">
+            className="py-4 px-2 rounded-xl shadow-md space-y-2">
 
             <div className="text-3xl flex justify-center">{item.icon}</div>
             <div className="text-lg text-center font-medium">{item.title}</div>
