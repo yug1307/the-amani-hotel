@@ -49,7 +49,7 @@ const Contact = () => {
     </section>
     
     {/* Book Your Stay */}
-    <section className="bg-sky-50 grid grid-cols-1 md:grid-cols-2 border border-red-500">
+    <section className="bg-sky-50 grid grid-cols-1 md:grid-cols-2">
       <img src="/images/contact-02.png" alt="" className="h-full w-full object-cover p-5 rounded-3xl"/>
       
       <div className="flex flex-col justify-center py-10 px-5 text-center space-y-3">
