@@ -58,7 +58,7 @@ function App() {
 
     {/* About US */}
     <section className="px-12 py-24 grid grid-cols-1 md:grid-cols-2 gap-5 bg-gradient-to-br from-green-100 to-yellow-100">
-      <img src="/images/contact-01.png" alt="contact" className="h-full w-[auto] rounded-xl"/>
+      <img src="/images/home-01.png" alt="contact" className="h-full w-[auto] rounded-xl"/>
 
       <div className="bg-white py-10 px-4 rounded-xl flex flex-col justify-center space-y-4">
 
