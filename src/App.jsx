@@ -8,32 +8,32 @@ import { Link } from "react-router-dom";
 const Rooms = [
   { 
     id: 1, imgSrc: "/images/banquet.png", title: "Banquet Hall", link: "/contact", price: "₹1000",
-    desc: [`Perfect for solo travelers or couples, featuring modern décor and essential comforts`], 
+    desc: [`Elegant banquet hall perfect for weddings, receptions, and grand celebrations with premium décor and catering support`], 
     amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
   },
   { 
     id: 2, imgSrc: "/images/conference.png", title: "Conference Hall", link: "/contact", price: "₹1200",
-    desc: [`Spacious rooms ideal for business travelers, offering a work-friendly environment with premium amenities`],
+    desc: [`Fully-equipped conference hall ideal for corporate meetings, seminars, and presentations with modern AV facilities`],
     amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
   },
   { 
     id: 3, imgSrc: "/images/twin.png", title: "Twin Rooms", link: "/contact", price: "₹1500",
-    desc: [`Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors`],
+    desc: [`Comfortable twin-bedded room perfect for friends or colleagues, offering a relaxing stay with modern amenities`],
     amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
   },
   { 
     id: 4, imgSrc: "/images/double.png", title: "Double Rooms", link: "/contact", price: "₹1500",
-    desc: [`Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors`],
+    desc: [`Spacious double room designed for couples or families, featuring a plush king-size bed and elegant interiors`],
     amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
   },
   { 
     id: 5, imgSrc: "/images/luxurysuite.png", title: "Suites", link: "/contact", price: "₹1500",
-    desc: [`Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors`],
+    desc: [`Experience luxury living in our premium suite with a separate lounge, enhanced comfort, and sophisticated décor`],
     amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
   },
   { 
     id: 6, imgSrc: "/images/dormitory.png", title: "Dormitory", link: "/contact", price: "₹1500",
-    desc: [`Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors`],
+    desc: [`Budget-friendly dormitory accommodation with clean shared spaces, ideal for groups, backpackers, and solo travelers`],
     amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
   }
 ]
