@@ -7,15 +7,32 @@ import { Link } from "react-router-dom";
 
 const Rooms = [
   { 
-    imgSrc: "/images/deluxeroom.png", title: "Deluxe Room", link: "/contact", price: "₹1000",
+    id: 1, imgSrc: "/images/banquet.png", title: "Banquet Hall", link: "/contact", price: "₹1000",
     desc: [`Perfect for solo travelers or couples, featuring modern décor and essential comforts`], 
     amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
   },
-  { imgSrc: "/images/executiveroom.png", title: "Executive Room", link: "/contact", price: "₹1200",
+  { 
+    id: 2, imgSrc: "/images/conference.png", title: "Conference Hall", link: "/contact", price: "₹1200",
     desc: [`Spacious rooms ideal for business travelers, offering a work-friendly environment with premium amenities`],
     amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
   },
-  { imgSrc: "/images/luxurysuite.png", title: "Luxury Suite", link: "/contact", price: "₹1500",
+  { 
+    id: 3, imgSrc: "/images/twin.png", title: "Twin Rooms", link: "/contact", price: "₹1500",
+    desc: [`Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors`],
+    amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
+  },
+  { 
+    id: 4, imgSrc: "/images/double.png", title: "Double Rooms", link: "/contact", price: "₹1500",
+    desc: [`Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors`],
+    amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
+  },
+  { 
+    id: 5, imgSrc: "/images/luxurysuite.png", title: "Suites", link: "/contact", price: "₹1500",
+    desc: [`Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors`],
+    amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
+  },
+  { 
+    id: 6, imgSrc: "/images/dormitory.png", title: "Dormitory", link: "/contact", price: "₹1500",
     desc: [`Experience elevated living with separate lounge space, enhanced comfort, and elegant interiors`],
     amenities: [ { icon: <Bed/> }, { icon: <Wind/> }, { icon: <Wifi/> }, { icon: <Tv/> }, { icon: <Coffee/> }, { icon: <Bath/> } ]
   }
@@ -57,7 +74,7 @@ function App() {
     </section>
 
     {/* About US */}
-    <section className="px-12 py-24 grid grid-cols-1 md:grid-cols-2 gap-5 bg-gradient-to-br from-green-100 to-yellow-100">
+    <section className="lg:px-10 py-24 px-5 grid grid-cols-1 md:grid-cols-2 gap-5 bg-gradient-to-br from-green-100 to-yellow-100">
       <img src="/images/home-01.png" alt="contact" className="h-full w-[auto] rounded-xl"/>
 
       <div className="bg-white py-10 px-4 rounded-xl flex flex-col justify-center space-y-4">
@@ -95,14 +112,14 @@ function App() {
       </div>
 
       {/* Room */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
         {Rooms.map((room, index) => (
 
           <div 
             key={index} 
-            className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 flex bg-white rounded-lg shadow-md overflow-hidden">
+            className="grid grid-cols-1 md:grid-cols-1 bg-white rounded-lg shadow-md overflow-hidden">
 
-            <img src={room.imgSrc} alt={room.title} className="w-full lg:h-[50vh] h-auto sm:h-96 object-cover"/>
+            <img src={room.imgSrc} alt={room.title} className="w-full lg:h-[35vh] h-auto sm:h-96 object-cover"/>
             <div className="p-4 space-y-2">
               <h3 className="text-2xl font-semibold text-orange-500">{room.title}</h3>
               <p className="text-gray-700">{room.desc}</p>
@@ -113,7 +130,7 @@ function App() {
                 ))}
               </ul>
 
-              <div className="text-xl text-red-500 font-bold">{room.price}/per night</div>
+              {/* <div className="text-xl text-red-500 font-bold">{room.price}/per night</div> */}
 
               <Link to={room.link} className="">
                 <div className="bg-zinc-700 lg:w-1/4 w-1/2 text-white text-center rounded-md p-2 my-4 font-semibold">Book Now</div>
@@ -133,7 +150,7 @@ function App() {
 
           <div 
             key={index} 
-            className="py-4 px-2 rounded-xl shadow-md space-y-2">
+            className="py-4 px-2 rounded-xl shadow-md border border-green-500 space-y-2">
 
             <div className="text-3xl flex justify-center">{item.icon}</div>
             <div className="text-lg text-center font-medium">{item.title}</div>
