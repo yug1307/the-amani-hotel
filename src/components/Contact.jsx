@@ -5,7 +5,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
  
 const contact = [
   { icon: <MapPin/>, address: "Kanhartoli, Gondia - 441 614" },
-  { icon: <Phone/>, phone: 7888020432 },
+  { icon: <Phone/>, phone: 8446603142 },
   { icon: <Mail/>, email: "amanihotel2204@gmail.com" }
 ]
  
