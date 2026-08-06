@@ -74,7 +74,7 @@ return (
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 max-w-8xl mx-auto gap-5 p-8 md:p-12 lg:p-16">
     
             <div className="max-w-2xl">
-              <div className="my-5">
+              <div className="mb-5">
                 <h2 className="roboto text-pink-400 lg:text-4xl text-2xl leading-relaxed">
                   Welcome to the Amani Hotel
                 </h2>
