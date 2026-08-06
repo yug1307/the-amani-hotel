@@ -71,7 +71,7 @@ return (
 
         {/* Hero Section */}
         <div className="ecommerce-hero relative overflow-hidden flex items-center min-h-[36.7vh] md:min-h-[75vh]">
-          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 max-w-8xl mx-auto gap-5 mx-6">
+          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 max-w-8xl mx-auto gap-5 p-6">
     
             <div className="max-w-2xl">
               <div className="mb-5">
