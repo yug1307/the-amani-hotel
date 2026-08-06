@@ -89,9 +89,9 @@ return (
           
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
-                <button className="roboto flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-[0_0_24px_rgba(2,132,199,0.6)] text-sm uppercase tracking-wider">
+                <Link to="/contact" className="roboto flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-[0_0_24px_rgba(2,132,199,0.6)] text-sm uppercase tracking-wider">
                   Book Your Stay <FaArrowRight className="text-xs" />
-                </button> 
+                </Link> 
               </div>
             </div>
           </div>
