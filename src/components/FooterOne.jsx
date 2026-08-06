@@ -10,7 +10,7 @@ const contact = [
 const FooterOne = () =>{
   return(
     <> 
-    <footer className="bg-gray-900 text-gray-300 py-10">
+    <footer className="bg-[#060730] text-gray-300 py-10">
       <section className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8 space-y-6">
         {/* Logo */}
         <svg width="0 160%" height="100%" viewBox="0 0 750 180" xmlns="http://www.w3.org/2000/svg">
