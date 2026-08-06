@@ -6,7 +6,7 @@ const Topbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-teal-800 shadow-sm">
+    <header className="sticky top-0 z-50 bg-[#060730] shadow-sm">
       <div className="max-w-7xl mx-auto p-3 flex items-center space-x-5 justify-between">
         
         {/* Logo */}
@@ -41,7 +41,7 @@ const Topbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-teal-800 border-t">
+        <div className="md:hidden bg-[#060730] border-t">
           <nav className="flex flex-col items-center space-y-4 px-6 py-6 text-white font-medium">
             <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
             <Link to="/gallery" onClick={() => setMenuOpen(false)}>Gallery</Link>
