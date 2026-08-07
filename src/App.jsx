@@ -61,16 +61,22 @@ return (
             .open-sans { font-family: 'Open Sans', sans-serif; }
             .nl:hover::after { transform: scaleX(1); }
           
-          .ecommerce-hero {
-            background-image: linear-gradient(120deg, rgba(10, 17, 40, 0.95) 0%, rgba(10, 17, 40, 0.65) 45%, rgba(10, 17, 40, 0.8) 100%), url('/images/home-01.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-          }
+          // .ecommerce-hero {
+          //   background-image: linear-gradient(120deg, rgba(10, 17, 40, 0.95) 0%, rgba(10, 17, 40, 0.65) 45%, rgba(10, 17, 40, 0.8) 100%), url('/images/home-01.png');
+          //   background-size: cover;
+          //   background-position: center;
+          //   background-repeat: no-repeat;
+          // }
         `}</style>
 
         {/* Hero Section */}
         <div className="ecommerce-hero relative overflow-hidden flex items-center min-h-[36.7vh] md:min-h-[75vh]">
+          <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
+            <source src="/images/hero.mp4" type="video/mp4" />
+          </video>
+          
+            <div className="absolute inset-0 bg-black/50" />
+          
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 max-w-8xl mx-auto gap-5 p-6">
     
             <div className="max-w-2xl">
