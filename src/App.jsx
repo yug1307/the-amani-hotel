@@ -90,7 +90,7 @@ return (
                   a perfect balance of elegance, relaxation, and convenience.
                 </p>
     
-                <span className="roboto lg:text-3xl text-xl font-bold text-pink-400">Stay. Relax. Reconnect</span>
+                <span className="roboto lg:text-3xl text-xl font-bold text-orange-400">Stay. Relax. Reconnect</span>
               </div>
           
               {/* CTA Buttons */}
