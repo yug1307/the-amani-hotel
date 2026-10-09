@@ -81,7 +81,7 @@ return (
     
             <div className="max-w-2xl">
               <div className="mb-5">
-                <h2 className="roboto text-pink-400 lg:text-4xl text-2xl leading-relaxed">
+                <h2 className="roboto text-orange-500 lg:text-4xl text-2xl leading-relaxed">
                   Welcome to the Amani Hotel
                 </h2>
     
@@ -95,7 +95,7 @@ return (
           
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
-                <Link to="/contact" className="roboto flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-[0_0_24px_rgba(2,132,199,0.6)] text-sm uppercase tracking-wider">
+                <Link to="/contact" className="roboto flex items-center gap-2 bg-orange-600 hover:bg-pink-700 text-white font-bold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-[0_0_24px_rgba(2,132,199,0.6)] text-sm uppercase tracking-wider">
                   Book Your Stay <FaArrowRight className="text-xs" />
                 </Link> 
               </div>
